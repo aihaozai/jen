@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haozai.jen.Start.daohang">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center">
+
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="现在开启"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_paget1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_paget2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_paget3"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

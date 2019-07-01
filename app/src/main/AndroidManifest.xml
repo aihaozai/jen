@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.haozai.jen">
+
+    <uses-sdk tools:overrideLibrary="com.example.cycleview" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/jenicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/jenicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity android:name=".Start.start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2655d8bd164c4" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="1cc86a3bb018d61c1a53632f2f10bcb5" />
+
+        <activity android:name=".conn.Login" />
+        <activity android:name=".conn.Register" />
+        <activity android:name=".conn.Forgetone" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Start.daohang" />
+        <activity android:name=".buy.Buyinfo" />
+        <activity android:name=".buy.SendBuyinfo" />
+        <activity android:name=".conn.Forgettwo" />
+        <activity android:name=".Car.ShoppingCartActivity" />
+        <activity android:name=".Address.AddressActivity" />
+        <activity android:name=".Address.EditAddress" />
+        <activity android:name=".GoodsFragment.GoodsActivity" />
+        <activity android:name=".Address.Add_address" />
+        <activity android:name=".ManageForMe.Safety" />
+        <activity android:name=".ManageForMe.Log_Pswd_Manage" />
+        <activity android:name=".ManageForMe.Reset_L_Pswd" />
+        <activity android:name=".ManageForMe.AboutInfo" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.haozai.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ManageForMe.SendBug" />
+        <activity android:name=".Car.CarToBuy" />
+        <activity android:name=".GridView.GVBooks" />
+        <activity android:name=".ManageForMe.Cash" />
+        <activity android:name=".Start.SplashActivity"></activity>
+    </application>
+
+</manifest>

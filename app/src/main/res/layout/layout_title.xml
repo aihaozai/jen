@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/carback"
+        android:layout_width="50dip"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="返回"
+        android:textColor="@color/white_c"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="购物车"
+        android:textColor="@color/white_c"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/bt_header_right"
+        android:layout_width="50dip"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="编辑"
+        android:textColor="@color/white_c"
+        android:textSize="14sp" />
+
+</RelativeLayout>

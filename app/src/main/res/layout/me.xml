@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/shape_gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tou"
+                    android:layout_width="69dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                     />
+
+                <TextView
+                    android:id="@+id/retou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical|center"
+                    android:text="更改头像"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:id="@+id/can_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3.5"
+                app:srcCompat="@mipmap/logout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_top_bar"
+            android:layout_height="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/top_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/car" />
+
+            <ImageView
+                android:id="@+id/daipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/daipay" />
+
+            <ImageView
+                android:id="@+id/daifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/daifa" />
+
+            <ImageView
+                android:id="@+id/daishou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/daishou" />
+
+            <ImageView
+                android:id="@+id/yue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/yue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="购物车" />
+
+            <TextView
+                android:id="@+id/paytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待付款" />
+
+            <TextView
+                android:id="@+id/fatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待发货" />
+
+            <TextView
+                android:id="@+id/shoutext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待收货" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="余额" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 上圆角-->
+
+
+        <!-- 分割线 -->
+
+        <LinearLayout
+            android:id="@+id/myorder"
+            style="@style/top_layout">
+
+            <ImageView
+                android:id="@+id/order_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:srcCompat="@mipmap/orders" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的订单" />
+
+            <ImageView
+                android:id="@+id/two_go"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/go" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/address_manage"
+            style="@style/top_layout">
+
+            <ImageView
+                android:id="@+id/address_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:srcCompat="@mipmap/address_m" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收货地址" />
+
+            <ImageView
+                android:id="@+id/three_go"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/go" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/safety_manage_go"
+            style="@style/di_layout">
+
+            <ImageView
+                android:id="@+id/safety_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:srcCompat="@mipmap/safety" />
+
+            <TextView
+                android:id="@+id/fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:text="账号安全" />
+
+            <ImageView
+                android:id="@+id/fourth_go"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/go" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view6"
+            style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/send_bug"
+            style="@style/di_layout">
+
+            <ImageView
+                android:id="@+id/send_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:srcCompat="@mipmap/resend" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="反   馈" />
+
+            <ImageView
+                android:id="@+id/five_go"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/go" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view7"
+            style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/about"
+            style="@style/di_layout"
+            android:layout_marginLeft="1dp">
+
+            <ImageView
+                android:id="@+id/guanyu_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:srcCompat="@mipmap/guanyu_v" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关   于" />
+
+            <ImageView
+                android:id="@+id/six_go"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/go" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

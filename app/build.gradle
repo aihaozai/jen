@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.example.haozai.jen"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/MobCommons-2018.0409.1534.jar')
+    compile files('libs/MobTools-2018.0408.1744.jar')
+    compile files('libs/SDKWrapper-2018.0201.1609.jar')
+    compile files('libs/SMSSDK-3.1.1.jar')
+    compile files('libs/universal-image-loader-1.7.1.jar')
+    compile files('libs/badgeview.jar')
+    compile files('libs/volley.jar')
+    compile project(':address')
+    /* compile project(':apay')
+    compile project(path: ':cycleview')*/
+    compile project(':email')
+    compile 'q.rorbin:badgeview:1.1.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'pub.devrel:easypermissions:0.1.5'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.github.f0ris.sweetalert:library:1.5.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+}

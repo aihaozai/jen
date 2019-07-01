@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#eee"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消"
+            />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.example.haozai.jen.wheel.WheelView
+            android:id="@+id/wheel_view_wv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            app:itemVisibleNum="5"
+            app:textColorOuter="@android:color/darker_gray"
+            app:textSizeOuter="14.0dip"
+            app:textColorCenter="@android:color/holo_blue_dark"
+            app:textSizeCenter="22.0dip"
+            app:lineColor="@android:color/holo_blue_dark"
+            app:isLoop="true"
+            app:lineSpaceingDimens="10.0dip" />
+
+</LinearLayout>
+</LinearLayout>

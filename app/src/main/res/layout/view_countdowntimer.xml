@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_day_decade"
+        style="@style/timeview" />
+
+    <TextView
+        android:id="@+id/tv_day_unit"
+        style="@style/timeview" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="天"
+        android:textColor="@color/end_or"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_hour_decade"
+        style="@style/timeview" />
+
+    <TextView
+        android:id="@+id/tv_hour_unit"
+        style="@style/timeview"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="分"
+        android:textColor="@color/center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_min_decade"
+        style="@style/timeview"
+        />
+
+    <TextView
+        android:id="@+id/tv_min_unit"
+        style="@style/timeview"
+        />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="秒"
+        android:textColor="@color/danger"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_sec_decade"
+        style="@style/timeview"
+        />
+
+    <TextView
+        android:id="@+id/tv_sec_unit"
+        style="@style/timeview" />
+
+</LinearLayout>

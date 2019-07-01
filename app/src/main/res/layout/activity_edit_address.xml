@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.haozai.jen.Address.EditAddress">
+    <View
+        android:id="@+id/viewbar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/edit_address"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            app:srcCompat="@mipmap/back_back" />
+
+        <TextView
+            android:id="@+id/address_title"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="修改收货地址"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/back_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_address_accept"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/top_et"
+                android:hint="收货人" />
+
+            <EditText
+                android:id="@+id/et_address_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/stysle_et"
+                android:hint="手机号码" />
+
+            <EditText
+                android:id="@+id/et_address_area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/stysle_et"
+                android:focusable="false"
+                android:hint="所在地区" />
+
+            <EditText
+                android:id="@+id/et_address_detail_area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/botttom_et"
+                android:hint="@string/detail_area" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="默认地址"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/default_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_bt_save"
+        android:elevation="0dp"
+        android:text="完成"
+        android:textColor="@color/center"
+        android:textSize="16sp" />
+</LinearLayout>

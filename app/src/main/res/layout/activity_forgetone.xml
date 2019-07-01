@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:textColor="@color/reg" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="24dp"
+        android:text="输入手机号码"
+        android:textColor="#808080" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:alpha="0.7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:text="手   机"
+            android:textColor="#000000" />
+
+
+        <EditText
+            android:id="@+id/for_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="48dp"
+            android:background="@drawable/number_shape"
+            android:hint="你的手机号码"
+            android:paddingLeft="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:alpha="0.7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fg_code"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botttom_et"
+            android:bottomLeftRadius="8dp"
+            android:bottomRightRadius="8dp"
+            android:text="获取验证码"
+            android:textColor="@color/reg"
+            android:textSize="13sp"
+            android:topLeftRadius="8dp"
+            android:topRightRadius="8dp" />
+
+
+        <EditText
+            android:id="@+id/for_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28dp"
+            android:background="@drawable/number_shape"
+            android:hint="请输入验证码"
+            android:paddingLeft="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_bt"
+        android:text="下一步"
+        android:alpha="0.7"
+        android:textColor="@color/reg"
+        android:textSize="16sp" />
+
+</LinearLayout>

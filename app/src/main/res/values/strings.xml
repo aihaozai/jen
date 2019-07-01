@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">甄甄书城</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">登陆</string>
+    <string name="login_text_two"></string>
+    <string name="hint_username">用户名/手机号码</string>
+    <string name="hint_password">密 码</string>
+    <string name="sign_in_button">登陆</string>
+    <string name="forgot_text">忘记密码？</string>
+    <string name="create_text">创建新用户</string>
+    <string name="help_info">现在，您可以输入您的电话号码，请注意，因为此电话号码可以帮助您找回您的身份信息。 </string>
+    <string name="buy_info">甄甄发货`售后</string>
+    <string name="buy_info1">正品保障</string>
+    <string name="buy_info2">支持7天无理由退货</string>
+    <string name="buy_info3">支持礼品卡</string>
+    <string name="buy_info4">礼品包装</string>
+    <string name="buy_info5">货到付款</string>
+    <string name="shouhuo_info">（收货不便时，可选择免费代收货服务）</string>
+    <string name="kuaidi_info">甄甄快递</string>
+    <string name="sendbuy_info">支持7天无理由退货</string>
+
+    <string name="app_cancel">取消</string>
+    <string name="app_sure">确定</string>
+    <string name="detail_area">详细地址：如道路、门牌号、小区、楼栋号、单元室等</string>
+    <string name="safety_one">互联网账号存在被盗风险，建议你定期更改密码以保护账号安全</string>
+    <string name="safety_two">你已绑定手机号，可以在此修改</string>
+    <string name="safety_pswd">你未设置支付密码，请点击立即设置</string>
+    <string name="safety_pswd_ok">你已经设置支付密码，可以在此修改</string>
+    <string name="safety_one_p">请选择身份验证方式：</string>
+    <string name="safety_one_sms">请输入您收到的验证码：</string>
+    <string name="safety_one_pswd">请输入您的支付密码：</string>
+    <string name="dialog_rigrht_one">通过绑定手机号验证</string>
+    <string name="dialog_rigrht_two">通过支付密码验证</string>
+    <string name="about">Copyrigth @2018-2019甄甄书城所有</string>
+    <string name="title">请输入标题</string>
+    <string name="context">请输入建议或者bug</string>
+    <string name="alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+</resources>
